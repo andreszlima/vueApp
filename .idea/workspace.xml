@@ -3,11 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="8b078193-a871-498e-9335-d6baf63daef2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Model/Reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/Reply.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_02_151205_create_replies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_02_151205_create_replies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/CategoryFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/LikeFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/LikeFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/QuestionFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/QuestionFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/ReplyFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ReplyFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +20,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -124,6 +139,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -163,7 +179,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577978514350</updated>
       <workItem from="1577978523056" duration="4000" />
-      <workItem from="1577979223630" duration="5481000" />
+      <workItem from="1577979223630" duration="7869000" />
     </task>
     <task id="LOCAL-00001" summary="Migrations">
       <created>1577990584591</created>
@@ -172,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577990584591</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Relationships">
+      <created>1577991402175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1577991402175</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,21 +204,22 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Migrations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrations" />
+    <MESSAGE value="Relationships" />
+    <option name="LAST_COMMIT_MESSAGE" value="Relationships" />
   </component>
   <component name="WindowStateProjectService">
     <state x="363" y="27" width="700" height="741" key="#PHP" timestamp="1577979445117">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="363" y="27" width="700" height="741" key="#PHP/70.27.1296.741@70.27.1296.741" timestamp="1577979445117" />
-    <state x="176" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577979446483">
+    <state x="176" y="55" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577993737870">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="176" y="55" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1296.741@70.27.1296.741" timestamp="1577979446483" />
-    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1577990582772">
+    <state x="176" y="55" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1296.741@70.27.1296.741" timestamp="1577993737870" />
+    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1577991400918">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2/70.27.1296.741@70.27.1296.741" timestamp="1577990582772" />
+    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2/70.27.1296.741@70.27.1296.741" timestamp="1577991400918" />
     <state x="313" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1577990597339">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
