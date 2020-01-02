@@ -26,7 +26,10 @@ class CreateRepliesTable extends Migration
             $table->index('question_id');
             $table->index('user_id');
 
-            $table->foreign('question_id')->references('questions')->onDelete('cascade');
+            $table->foreign('question_id')
+                ->references('id')
+                ->on('questions')
+                ->onDelete('cascade');
 
         });
     }
