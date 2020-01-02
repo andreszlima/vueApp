@@ -229,7 +229,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577978514350</updated>
       <workItem from="1577978523056" duration="4000" />
-      <workItem from="1577979223630" duration="8254000" />
+      <workItem from="1577979223630" duration="8333000" />
     </task>
     <task id="LOCAL-00001" summary="Migrations">
       <created>1577990584591</created>
@@ -266,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577994077242</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Removing idea">
+      <created>1577994186768</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1577994186768</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,10 +296,10 @@
       <screen x="70" y="27" width="1296" height="741" />
     </state>
     <state x="176" y="55" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1296.741@70.27.1296.741" timestamp="1577993737870" />
-    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1577994147326">
+    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2" timestamp="1577994200013">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
-    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2/70.27.1296.741@70.27.1296.741" timestamp="1577994147326" />
+    <state x="283" y="27" width="860" height="741" key="CommitChangelistDialog2/70.27.1296.741@70.27.1296.741" timestamp="1577994200013" />
     <state x="313" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1577994036674">
       <screen x="70" y="27" width="1296" height="741" />
     </state>
