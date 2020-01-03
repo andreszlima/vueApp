@@ -25,7 +25,6 @@ class CreateQuestionsTable extends Migration
             $table->index('category_id');
             $table->index('user_id');
 
-
             $table->timestamps();
         });
     }

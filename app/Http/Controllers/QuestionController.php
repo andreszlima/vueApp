@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Model\Question;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Builder;
+use Symfony\Component\HttpFoundation\Response;
 
 class QuestionController extends Controller
 {
@@ -14,7 +16,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        //
+        return Question::latest()->get();
     }
 
     /**
@@ -35,18 +37,19 @@ class QuestionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        auth()->user()->question()->create($request->all());
+        return response(null, Response::HTTP_CREATED);
     }
 
     /**
      * Display the specified resource.
-     *
+     * @mixing Eloquent
      * @param  \App\Model\Question  $question
      * @return \Illuminate\Http\Response
      */
     public function show(Question $question)
     {
-        //
+        return $question;
     }
 
     /**
@@ -80,6 +83,7 @@ class QuestionController extends Controller
      */
     public function destroy(Question $question)
     {
-        //
+        $question->delete();
+        return response(null, Response::HTTP_GONE);
     }
 }
