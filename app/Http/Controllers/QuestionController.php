@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\QuestionResource;
 use App\Model\Question;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
@@ -16,7 +17,7 @@ class QuestionController extends Controller
      */
     public function index()
     {
-        return Question::latest()->get();
+        return QuestionResource::collection(Question::latest()->get());
     }
 
     /**
@@ -45,11 +46,11 @@ class QuestionController extends Controller
      * Display the specified resource.
      * @mixing Eloquent
      * @param  \App\Model\Question  $question
-     * @return \Illuminate\Http\Response
+     * @return QuestionResource
      */
     public function show(Question $question)
     {
-        return $question;
+        return new QuestionResource($question);
     }
 
     /**
