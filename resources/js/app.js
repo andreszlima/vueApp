@@ -14,6 +14,11 @@ import Vuetify from 'vuetify'
 
 Vue.use(Vuetify);
 
+import User from './Helpers/User'
+
+window.User = User;
+
+
 const opts = {};
 
 export default new Vuetify(opts);
