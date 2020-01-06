@@ -44,6 +44,11 @@
                     >
                         Entrar
                     </v-btn>
+
+                    <router-link to="/signup">
+                        <v-btn>Signup</v-btn>
+                    </router-link>
+
                 </v-col>
 
 
@@ -54,8 +59,6 @@
 </template>
 
 <script>
-
-    const axios = require('axios');
 
     export default {
         data(){
@@ -73,6 +76,7 @@
             }
         }
     }
+
 </script>
 
 <style scoped>

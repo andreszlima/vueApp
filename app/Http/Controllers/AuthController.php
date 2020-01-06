@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\SignupRequest;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -19,7 +20,7 @@ class AuthController extends Controller
         $this->middleware('auth:api', ['except' => ['login', 'signup']]);
     }
 
-    public function signup(Request $request)
+    public function signup(SignupRequest $request)
     {
         User::create($request->all());
         return $this->login($request);
